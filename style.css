@@ -1,0 +1,81 @@
+html{
+    background-color: #e1e1e1;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+  
+
+}
+#text {
+  width: 30%;
+  float: right;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 1em;   
+
+}
+
+#imapc {
+  display: block;
+  width: 70%;
+  float: right;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1em;
+
+
+}
+  
+  #imap{
+    
+    width: 100%;
+  }
+  td, th {
+    border: 1px solid silver;
+    padding: 0.2em 1em;
+  }
+  
+  thead th {
+    background: #E0E0E0;
+    color: black;
+  }
+  
+  tr {
+    background: white;
+  }
+  
+  tr.red {
+    background: #FFF0F0;
+  }
+  
+  tr.gray {
+    background: #CFCFCF;
+  }
+  
+  tr:nth-child(even) {
+    background: #F0F0F0;
+  }
+  
+  tr:nth-child(even).red {
+    background: #FFE6E6;
+  }
+  
+  tr:nth-child(even).gray {
+    background: #CCCCCC;
+  }
+  
+  tr.selected {
+    background: #CCCCFF;
+  }
+  tr:nth-child(even).selected {
+    background: #BBBBFF;
+  }
+                 
+  /* tr.highlight, tr:hover, tr:nth-child(even):hover, tr:nth-child(even).highlight,
+  tr.red.highlight, tr.gray.highlight, tr.selected.highlight {
+    background: #FFFF99;
+    color: red;
+  } */
+  

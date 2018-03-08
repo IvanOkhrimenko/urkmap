@@ -1,0 +1,121 @@
+var a = document.getElementById("imap"); //get image.svg
+
+a.addEventListener("load",function(){
+    // get the inner DOM of image.svg
+    var svgDoc = a.contentDocument ? a.contentDocument : a.contentWindow.document;
+    // get the inner element by id
+   function Area(obj, area){
+       obj.onmouseover = function () {
+        this.style.fill = "#FFFF99";
+        area.style.background = "#FFFF99"
+    }
+        obj.onmouseout = function () {
+            this.style.fill = "#fdfcea";
+            area.style.background = ""
+          }
+        area.onmouseover = function () {
+            this.style.background = "#FFFF99";
+            obj.style.fill = "#FFFF99"
+        }
+        area.onmouseout = function () {
+                this.style.background = "";
+                obj.style.fill = "#fdfcea"
+              }
+   }
+   
+    var delta = svgDoc.getElementById("path7227");//Vinnecka
+    var area = document.getElementById('path7227');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7241");//Volynska
+    var area = document.getElementById('path7241');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7083");//Dnipropetr
+    var area = document.getElementById('path7083');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7067");//Donecka
+    var area = document.getElementById('path7067');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7229");//Zhytomyrska
+    var area = document.getElementById('path7229');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7247");//Zakarpatska
+    var area = document.getElementById('path7247');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7075");//Zaporyzka
+    var area = document.getElementById('path7075');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7239");//Ivano-Frankivsk
+    var area = document.getElementById('path7239');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7183");//Kyivska
+    var area = document.getElementById('path7183');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7147");//Kirovohrad
+    var area = document.getElementById('path7147');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7065");//Lyhanska
+    var area = document.getElementById('path7065');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7243");//Lvivska
+    var area = document.getElementById('path7243');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7135");//Mykolaivska
+    var area = document.getElementById('path7135');
+    var obl = new Area(delta, area);
+
+    // var delta = svgDoc.getElementById("path7223");//Odeska
+    // var area = document.getElementById('path7191');
+    // var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7103");//Poltavska
+    var area = document.getElementById('path7103');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7233");//Rivnenska
+    var area = document.getElementById('path7233');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7079");//Sumska
+    var area = document.getElementById('path7079');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7235");//Ternopil
+    var area = document.getElementById('path7235');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7071");//Harkivska
+    var area = document.getElementById('path7071');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7111");//Hersonska
+    var area = document.getElementById('path7111');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7231");//Hmelnytska
+    var area = document.getElementById('path7231');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7149");//Cherkaska
+    var area = document.getElementById('path7149');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7237");//Chernivetska
+    var area = document.getElementById('path7237');
+    var obl = new Area(delta, area);
+
+    var delta = svgDoc.getElementById("path7129");//Chernihivska
+    var area = document.getElementById('path7129');
+    var obl = new Area(delta, area);
+});
