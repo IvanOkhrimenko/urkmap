@@ -86,6 +86,7 @@ a.addEventListener("load",function(){
     var delta = svgDoc.getElementById("path7233");//Rivnenska
     var area = document.getElementById('path7233');
     var obl = new Area(delta, area);
+    
 
     var delta = svgDoc.getElementById("path7079");//Sumska
     var area = document.getElementById('path7079');
@@ -118,4 +119,27 @@ a.addEventListener("load",function(){
     var delta = svgDoc.getElementById("path7129");//Chernihivska
     var area = document.getElementById('path7129');
     var obl = new Area(delta, area);
+
+   function Click(tableins,tableId, alpha ){
+    tableId.addEventListener('click', function() {
+        tableins.classList.toggle('active');
+        alpha.classList.toggle('active');
+        tableins.classList.toggle('non');
+
+
+      }, false);
+      alpha.addEventListener('click', function() {
+        tableins.classList.toggle('active');
+      }, false);
+   }
+
+    var  tableins= document.getElementById('olol');
+    var tableId = document.getElementById('path7227')
+    var alpha = svgDoc.getElementById("path7227");
+     var cli = new Click(tableins,tableId,alpha);
+    
+     var  tableins= document.getElementById('olol1');
+     var tableId = document.getElementById('path7227')
+     var alpha = svgDoc.getElementById("path7227");
+      var cli = new Click(tableins,tableId,alpha);
 });

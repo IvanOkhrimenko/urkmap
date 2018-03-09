@@ -41,6 +41,9 @@ table {
     background: #E0E0E0;
     color: black;
   }
+  thead th.active {
+    background: #CCCCFF;;
+  }
   
   tr {
     background: white;
@@ -56,10 +59,12 @@ table {
   
   tr:nth-child(even) {
     background: #F0F0F0;
+  
   }
   
-  tr:nth-child(even).red {
-    background: #FFE6E6;
+  tr:nth-child(even).active {
+    background: #CCCCFF;
+    
   }
   
   tr:nth-child(even).gray {
@@ -72,7 +77,12 @@ table {
   tr:nth-child(even).selected {
     background: #BBBBFF;
   }
-                 
+  .non {
+    display: none;
+    
+  }
+  
+  
   /* tr.highlight, tr:hover, tr:nth-child(even):hover, tr:nth-child(even).highlight,
   tr.red.highlight, tr.gray.highlight, tr.selected.highlight {
     background: #FFFF99;
