@@ -8,7 +8,7 @@ table {
 
 }
 #text {
-  width: 30%;
+  width: 40%;
   float: right;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -18,7 +18,7 @@ table {
 
 #imapc {
   display: block;
-  width: 70%;
+  width: 60%;
   float: right;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -41,16 +41,16 @@ table {
     background: #E0E0E0;
     color: black;
   }
-  thead th.active {
-    background: #CCCCFF;;
-  }
-  
+   .last{
+     max-width: 200px;
+   }
   tr {
     background: white;
   }
   
-  tr.red {
-    background: #FFF0F0;
+  tr.active {
+    background: #E6E6FA;
+    font-size: 0.7em;
   }
   
   tr.gray {
@@ -63,26 +63,34 @@ table {
   }
   
   tr:nth-child(even).active {
-    background: #CCCCFF;
+    background: #E6E6FA;
     
   }
   
   tr:nth-child(even).gray {
     background: #CCCCCC;
   }
-  
-  tr.selected {
-    background: #CCCCFF;
-  }
-  tr:nth-child(even).selected {
-    background: #BBBBFF;
-  }
+
+ 
   .non {
     display: none;
     
   }
-  
-  
+  .active {
+    background: #E6E6FA;
+    font-size: 0.7em;
+  }
+  #headIns{
+
+      background: #E6E6FA;
+      font-size: 0.8em;
+    
+  }
+  #headIns th{
+    width: 200px;
+      
+    
+  }
   /* tr.highlight, tr:hover, tr:nth-child(even):hover, tr:nth-child(even).highlight,
   tr.red.highlight, tr.gray.highlight, tr.selected.highlight {
     background: #FFFF99;

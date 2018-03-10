@@ -120,26 +120,54 @@ a.addEventListener("load",function(){
     var area = document.getElementById('path7129');
     var obl = new Area(delta, area);
 
-   function Click(tableins,tableId, alpha ){
+//    function Click(tableins,tableId, alpha ){
+//     tableId.addEventListener('click', function() {
+//         tableins.classList.toggle('active');
+//         alpha.classList.toggle('active');
+//         tableins.classList.toggle('non');
+
+
+//       }, false);
+//       alpha.addEventListener('click', function() {
+//         tableins.classList.toggle('active');
+//       }, false);
+//    }
+
+//     var  tableins= document.getElementById('olol');
+//     var tableId = document.getElementById('path7227')
+//     var alpha = svgDoc.getElementById("path7227");
+//      var cli = new Click(tableins,tableId,alpha);
+    
+//      var  tableins= document.getElementById('olol1');
+//       var cli = new Click(tableins,tableId,alpha);
+ function Click(tableins,tableId, alpha ){
     tableId.addEventListener('click', function() {
         tableins.classList.toggle('active');
+        headIns.classList.toggle('active');
         alpha.classList.toggle('active');
         tableins.classList.toggle('non');
 
 
       }, false);
       alpha.addEventListener('click', function() {
+        tableins.classList.toggle('non');
+        alpha.classList.toggle('active');
         tableins.classList.toggle('active');
+      }, false);
+      tableins.addEventListener('click', function() {
+        alert("Тут буде перехід на сайт дільниці");
       }, false);
    }
 
-    var  tableins= document.getElementById('olol');
+    var  tableins= document.getElementById('Vovo11');
+    var headIns = document.getElementById('headIns');
     var tableId = document.getElementById('path7227')
     var alpha = svgDoc.getElementById("path7227");
-     var cli = new Click(tableins,tableId,alpha);
+     var cli = new Click(tableins,tableId,alpha, headIns);
     
-     var  tableins= document.getElementById('olol1');
-     var tableId = document.getElementById('path7227')
-     var alpha = svgDoc.getElementById("path7227");
-      var cli = new Click(tableins,tableId,alpha);
+     var  tableins= document.getElementById('headIns');
+      var cli = new Click(tableins,tableId,alpha, headIns);
+
+      var  tableins= document.getElementById('Vovo12');
+      var cli = new Click(tableins,tableId,alpha, headIns);
 });
